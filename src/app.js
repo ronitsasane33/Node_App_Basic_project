@@ -21,7 +21,7 @@ app.get('', (req,res)=>{
     res.render('index',{
         title: 'Home',
         name: 'shubham',
-        age: 24
+        age: 25
     })
 })
    
