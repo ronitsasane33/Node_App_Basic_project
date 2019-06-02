@@ -2,6 +2,7 @@ const hbs = require("hbs")
 //Express setting
 const express = require("express")
 const app = express()
+const port = process.env.PORT || 3000
 
 //Path setting
 const path = require("path")
@@ -50,6 +51,6 @@ app.get("/help", (req, res)=> {
     })
 })
 
-app.listen(3000, ()=>{
-    console.log("connected to server")
+app.listen(port, ()=>{
+    console.log("connected to server "+ port)
 })
